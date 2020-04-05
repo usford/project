@@ -1,0 +1,57 @@
+{
+  "name": "weather",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+  "homepage": "./",
+  "dependencies": {
+    "@material-ui/core": "^4.9.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "bootswatch": "^4.4.1",
+    "electron": "^8.1.1",
+    "electron-packager": "^14.2.1",
+    "electron-reload": "^1.5.0",
+    "electron-winstaller": "^4.0.0",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "proton-native": "^2.0.4",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-draggable": "^4.2.0",
+    "react-redux-form": "^1.16.14",
+    "react-scripts": "3.3.1",
+    "react-svg": "^11.0.9",
+    "redux": "^4.0.5",
+    "svg-inline-react": "^3.2.0",
+    "xlsx-populate": "^1.21.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=`Bill Stack`",
+    "electron": "electron ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
